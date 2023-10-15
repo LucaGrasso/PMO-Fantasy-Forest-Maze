@@ -1,0 +1,6 @@
+#background-pane{
+    -fx-background-image: url("img/levelpage.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: contain;
+    -fx-background-position: center;
+}

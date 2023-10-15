@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<GridPane fx:id="gridLogin" alignment="center" hgap="5.0" vgap="5.0" xmlns="http://javafx.com/javafx/19"
+          xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.controller.LoginFormController">
+    <columnConstraints>
+        <ColumnConstraints halignment="RIGHT" maxWidth="100.0" minWidth="100.0" prefWidth="100.0"/>
+        <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="150.0" minWidth="150.0" prefWidth="150.0"/>
+        <ColumnConstraints halignment="LEFT" maxWidth="100.0" minWidth="100.0" prefWidth="100.0"/>
+        <ColumnConstraints/>
+        <ColumnConstraints/>
+    </columnConstraints>
+
+    <!-- Add Header Label -->
+    <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="27.0" prefWidth="337.0" text="Login Form"
+           GridPane.columnIndex="1" GridPane.rowIndex="0">
+        <font>
+            <Font name="Arial Bold" size="20.0"/>
+        </font>
+        <GridPane.margin>
+            <Insets bottom="20" top="20"/>
+        </GridPane.margin>
+    </Label>
+
+
+    <!-- Add Name Label -->
+    <Label text="Player Name : " GridPane.columnIndex="0" GridPane.rowIndex="1">
+        <font>
+            <Font name="System Bold" size="14.0"/>
+        </font>
+    </Label>
+
+    <!-- Add Name Text Field -->
+    <TextField fx:id="nameField" alignment="CENTER" maxWidth="125.0" minHeight="35.0" prefHeight="40" prefWidth="100.0"
+               text="user1" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+        <font>
+            <Font name="Unis-pace-Bold" size="14.0"/>
+        </font>
+    </TextField>
+
+
+    <!-- Add Password Label -->
+    <Label text="Password : " GridPane.columnIndex="0" GridPane.rowIndex="2">
+        <font>
+            <Font name="System Bold" size="14.0"/>
+        </font>
+    </Label>
+
+    <!-- Add Password Field -->
+    <PasswordField fx:id="passwordField" alignment="CENTER" maxWidth="125.0" minHeight="35.0" prefHeight="40.0"
+                   prefWidth="100.0" text="123456" GridPane.columnIndex="1" GridPane.halignment="CENTER"
+                   GridPane.rowIndex="2">
+        <font>
+            <Font name="Unis-pace-Bold" size="18.0"/>
+        </font>
+    </PasswordField>
+
+
+    <!-- Add Submit Button -->
+    <Button fx:id="submitButton" alignment="CENTER" contentDisplay="CENTER" defaultButton="true" graphicTextGap="5.0"
+            maxHeight="30.0" maxWidth="80.0" onAction="#handleSubmitButtonAction" prefHeight="40" prefWidth="100"
+            styleClass="btn" stylesheets="@style.css" text="Submit" textOverrun="CLIP" GridPane.columnIndex="2"
+            GridPane.columnSpan="3" GridPane.rowIndex="2">
+        <GridPane.margin>
+            <Insets/>
+        </GridPane.margin>
+        <font>
+            <Font size="14.0"/>
+        </font>
+    </Button>
+    <RadioButton fx:id="registrationOption" mnemonicParsing="false" prefHeight="25.0" prefWidth="120.0"
+                 text="Registration" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3"
+                 GridPane.valignment="TOP">
+        <GridPane.margin>
+            <Insets/>
+        </GridPane.margin>
+        <font>
+            <Font name="Unis-pace-Bold" size="10.0"/>
+        </font>
+    </RadioButton>
+    <HBox GridPane.columnIndex="2" GridPane.rowIndex="1">
+        <children>
+            <Rectangle fx:id="serverStatus" arcHeight="5.0" arcWidth="5.0" fill="#ffffff" height="15.0" rotate="45.0"
+                       stroke="BLACK" strokeType="INSIDE" width="15.0">
+                <HBox.margin>
+                    <Insets top="5.0"/>
+                </HBox.margin>
+            </Rectangle>
+            <Label fx:id="serverStatusText" alignment="CENTER" contentDisplay="CENTER" prefHeight="25.0"
+                   prefWidth="80.0" text="status">
+                <font>
+                    <Font name="Arial Bold" size="10.0"/>
+                </font>
+                <HBox.margin>
+                    <Insets/>
+                </HBox.margin>
+            </Label>
+        </children>
+    </HBox>
+
+    <stylesheets>
+        <URL value="@style.css"/>
+        <URL value="@01_LoginPage.css"/>
+    </stylesheets>
+    <rowConstraints>
+        <RowConstraints maxHeight="60.0" minHeight="60.0" prefHeight="60.0"/>
+        <RowConstraints minHeight="40.0" prefHeight="40.0"/>
+        <RowConstraints maxHeight="40.0" minHeight="40.0" prefHeight="40.0"/>
+        <RowConstraints maxHeight="20.0" minHeight="20.0" prefHeight="20.0"/>
+    </rowConstraints>
+</GridPane>
