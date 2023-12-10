@@ -1,9 +1,9 @@
-# PMO-Fantasy-Forest-Maze
-## Corso di Programmazione ad Oggetti dell`Universita`` di Pesaro e Urbino
+# PMO Fantasy Forest Maze
+## Progetto di Programmazione ad Oggetti 2022/2023
+
+### Università degli Studi di Pesaro e Urbino
+### Studente: Grasso Luca
+### Matricola: 294612
 
 
 
-Progetto PMO 2023-2024
-
-todo: 
-    descrizione di tutto il progetto

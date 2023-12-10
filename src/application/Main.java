@@ -1,22 +1,13 @@
 package application;
 
-//import com.sun.javafx.css.StyleManager;
-//import com.sun.javafx.logging.PlatformLogger;
-//import controller.MazeController;
-//import model.MazeModel;
 
 import javafx.application.Application;
 import javafx.stage.Stage;
 import view.controller.SceneController;
+import utilities.ExceptionLogger;
 
-
-/**
- * @Auther: Luca Grasso
- * @Date: 2022/10/25
- */
 
 // https://edencoding.com/mvc-in-javafx/
-
 
 // Abstract of javafx.application.Application
 // The entry point for JavaFX applications is the Application class:
@@ -30,10 +21,14 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) {
-        try{
-            new SceneController("01_Login", primaryStage, 600, 400);
-        } catch (Exception e){
-            e.printStackTrace();
+        try {
+            new SceneController("01_Login", primaryStage, 800, 600);
+        } catch (Exception e) {
+            ExceptionLogger logger = ExceptionLogger.getInstance();
+
+            logger.logException("Errore nell`apertura di 01_login", e);
+
         }
     }
 }
+

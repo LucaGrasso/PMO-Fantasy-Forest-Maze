@@ -1,10 +1,7 @@
 package view.controller;
 
-import application.Main;
-import javafx.application.Application;
-import javafx.event.ActionEvent;
+
 import javafx.fxml.FXMLLoader;
-import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.image.Image;
@@ -15,30 +12,30 @@ import java.util.Objects;
 
 /**
  * @author: Luca Grasso
- * @Project: interactive-maze
- * @Date: 31/10/22
+ * {@code @Project:} interactive-maze
+ * @Date: 31/10/23
  */
 public class SceneController {
     private final String nameScene;
     private final Stage primaryStage;
-    private final int widht;
+    private final int width;
     private final int height;
-
 
     public SceneController(String nameScene, Stage stage, int width, int height) {
         this.nameScene = "/view/fxml/" + nameScene + ".fxml";
         this.primaryStage = stage;
-        this.widht = width;
+        this.width = width;
         this.height = height;
         switchToCreation();
     }
 
+    //
     private void switchToCreation() {
         try {
             Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource(nameScene)));
 
             primaryStage.setTitle("Enchanted Woods");
-            primaryStage.setScene(new Scene(root, widht, height));
+            primaryStage.setScene(new Scene(root, width, height));
             primaryStage.getIcons().add(new Image(Objects.requireNonNull(getClass().getResourceAsStream("/resources/img/tree1.png"))));
             primaryStage.setResizable(false);
             primaryStage.show();
