@@ -7,19 +7,17 @@ USE
 fantasyDB;
 
 /* Creo la tabella */
-DROP TABLE IF EXISTS userApplication;
-CREATE TABLE userApplication
+DROP TABLE IF EXISTS utenti;
+CREATE TABLE utenti
 (
-    user_PK       INT AUTO_INCREMENT NOT NULL PRIMARY KEY,
-    user_name     VARCHAR(15) NOT NULL UNIQUE,
-    user_password VARCHAR(15) NOT NULL,
-    Sesso         ENUM('M', 'F','X'),
-    record_score  INT DEFAULT 0 CHECK (record_score > 0)
+    username     VARCHAR(20) NOT NULL UNIQUE,
+    password VARCHAR(180) NOT NULL,
+    PRIMARY KEY(username)
 ) ENGINE=INNODB;
 
 
-/* Popolo la tabella con dei dati */
-INSERT INTO userApplication (user_PK, user_name, user_password, Sesso, record_score)
+/* Popolo la tabella con dei dati
+INSERT INTO utenti (user_PK, user_name, user_password, Sesso, record_score)
 values (1, 'User1', '123456', 'M', 900),
        (2, 'User2', '123456', 'M', 780),
        (3, 'User3', '123456', 'F', 3000),
@@ -29,4 +27,4 @@ values (1, 'User1', '123456', 'M', 900),
        (7, 'User7', '123456', 'X', 510),
        (8, 'User8', '123456', 'M', 10),
        (9, 'User9', '123456', 'M', 500),
-       (10, 'User10', '123456', 'M', 100);
+       (10, 'User10', '123456', 'M', 100);*/

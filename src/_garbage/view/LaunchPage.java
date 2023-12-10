@@ -12,7 +12,7 @@ import javafx.scene.text.FontWeight;
 import javafx.scene.text.Text;
 import javafx.util.Duration;
 
-import application.model.CharacterModel;
+import application.models.CharacterModel;
 
 /**
  * @Auther: Luca Grasso
@@ -34,7 +34,7 @@ public class LaunchPage extends BorderPane {
 //     this.setRight(rightPane);
 //     this.setLeft(leftPane);
 
-        this.getStylesheets().add("application/view/fxml/02_LaunchPage.css");
+        this.getStylesheets().add("application/views/fxml/02_LaunchPage.css");
         this.setBottom(bottomPane);
         this.setCenter(centralPane);
         this.setTop(topPane);

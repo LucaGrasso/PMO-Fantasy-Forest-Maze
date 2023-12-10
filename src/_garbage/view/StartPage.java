@@ -12,11 +12,11 @@ import java.util.HashSet;
 import java.util.Objects;
 import java.util.Set;
 
-import application.model.CharacterModel;
-import _garbage.CharacterPage;
-import _garbage.GamePage;
-import _garbage.HelpPage;
-import _garbage.LevelPage;
+import application.models.CharacterModel;
+import application.views.CharacterPage;
+import application.views.GamePage;
+import application.views.HelpPage;
+import application.views.LevelPage;
 
 
 /**
@@ -41,26 +41,26 @@ public class StartPage extends Application {
     @Override
     public void start(Stage primaryStage) {
 
-        // Load the image paths from the model
+        // Load the image paths from the models
         CharacterModel c = CharacterModel.getInstance();
 
 
         LaunchPage launchPage = new LaunchPage(WIDTH, HEIGHT, c);
         Scene launchScene = new Scene(launchPage, WIDTH, HEIGHT);
-        launchScene.getStylesheets().add("application/view/fxml/style.css");
+        launchScene.getStylesheets().add("application/views/fxml/style.css");
 
         CharacterPage characterPage = new CharacterPage(c);
         Scene chooseCharacterScene = new Scene(characterPage, WIDTH, HEIGHT);
-        chooseCharacterScene.getStylesheets().add("application/view/fxml/style.css");
+        chooseCharacterScene.getStylesheets().add("application/views/fxml/style.css");
 
         LevelPage levelPage = new LevelPage(c);
         Scene levelScene = new Scene(levelPage, WIDTH, HEIGHT);
-        levelScene.getStylesheets().add("application/view/fxml/style.css");
+        levelScene.getStylesheets().add("application/views/fxml/style.css");
 
 
         HelpPage helpPage = new HelpPage();
         Scene helpScene = new Scene(helpPage, WIDTH, HEIGHT);
-        helpScene.getStylesheets().add("application/view/fxml/style.css");
+        helpScene.getStylesheets().add("application/views/fxml/style.css");
 
         launchPage.startBtn.setOnMouseClicked(mouseEvent -> primaryStage.setScene(chooseCharacterScene));
         launchPage.helpBtn.setOnMouseClicked(mouseEvent -> primaryStage.setScene(helpScene));
