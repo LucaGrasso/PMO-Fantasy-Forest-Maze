@@ -3,7 +3,7 @@ package application;
 
 import javafx.application.Application;
 import javafx.stage.Stage;
-import view.controller.SceneController;
+import _garbage.controller.SceneController;
 import utilities.ExceptionLogger;
 
 
