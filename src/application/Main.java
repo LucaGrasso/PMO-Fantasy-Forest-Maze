@@ -3,7 +3,7 @@ package application;
 
 import javafx.application.Application;
 import javafx.stage.Stage;
-import _garbage.controller.SceneController;
+import application.view.controller.SceneController;
 import utilities.ExceptionLogger;
 
 
@@ -12,6 +12,8 @@ import utilities.ExceptionLogger;
 // Abstract of javafx.application.Application
 // The entry point for JavaFX applications is the Application class:
 // ref: https://openjfx.io/javadoc/11/javafx.graphics/javafx/application/Application.html
+
+// Sto provando un test per vedere se funziona il commit
 public class Main extends Application {
 
     public static void main(String[] args) {
