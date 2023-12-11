@@ -14,6 +14,9 @@ import java.sql.SQLException;
 
 public class DatabaseConnectionSingleton {
     private static DatabaseConnectionSingleton instance;
+    String url = System.getenv("DB_URL");
+    String userName = System.getenv("DB_USER");
+    String password = System.getenv("DB_PASSWORD");
     private Connection conn;
     private boolean isOlineDB;
 
@@ -25,9 +28,9 @@ public class DatabaseConnectionSingleton {
                After Java 6 this should no more be necessary though */
             // Inseriti qua, perchè sono nativi del oggetto Connessione
             String driverClassName = "com.mysql.cj.jdbc.Driver";
-            String password = "qwe123QWE@@@";
-            String userName = "fantasyApplication";
-            String url = "jdbc:mysql://212.227.30.95:3306/fantasyDB";
+            String password = this.password;
+            String userName = this.userName;
+            String url = this.url;
 
             Class.forName(driverClassName);
             /* open database connection */
@@ -70,6 +73,16 @@ public class DatabaseConnectionSingleton {
 
     public boolean getDbOnline() {
         return isOlineDB;
+    }
+
+    public static void close() {
+        if (instance != null && instance.conn != null) {
+            try {
+                instance.conn.close();
+            } catch (SQLException e) {
+                // handle exception
+            }
+        }
     }
 }
 

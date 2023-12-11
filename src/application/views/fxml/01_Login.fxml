@@ -35,7 +35,7 @@
     </Label>
 
     <!-- Add Name Text Field -->
-    <TextField fx:id="nameField" alignment="CENTER" maxWidth="125.0" minHeight="35.0" prefHeight="40" prefWidth="100.0" text="user1" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+    <TextField fx:id="userField" alignment="CENTER" maxWidth="125.0" minHeight="35.0" prefHeight="40" prefWidth="100.0" text="user1" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1">
         <font>
             <Font name="Unis-pace-Bold" size="14.0" />
         </font>
@@ -58,7 +58,7 @@
 
 
     <!-- Add Submit Button -->
-    <Button fx:id="submitButton" alignment="CENTER" contentDisplay="CENTER" defaultButton="true" graphicTextGap="5.0" maxHeight="30.0" maxWidth="97.0" onAction="#handleSubmitButtonAction" prefHeight="30.0" prefWidth="97.0" styleClass="btn" stylesheets="@style.css" text="Submit" textOverrun="CLIP" GridPane.columnIndex="2" GridPane.columnSpan="3" GridPane.rowIndex="2">
+    <Button fx:id="submitButton" alignment="CENTER" contentDisplay="CENTER" defaultButton="true" graphicTextGap="5.0" maxHeight="30.0" maxWidth="97.0" onAction="#handleSubmitButtonAction" prefHeight="30.0" prefWidth="97.0" styleClass="btn" stylesheets="@style.css" text="Play" textOverrun="CLIP" GridPane.columnIndex="2" GridPane.columnSpan="3" GridPane.rowIndex="2">
         <GridPane.margin>
             <Insets />
         </GridPane.margin>

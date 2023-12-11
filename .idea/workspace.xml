@@ -5,56 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5a6d23b6-6e4d-4764-be09-3ec78f1f4ef8" name="Changes" comment="Singleton:&#10;aggiunta di una classe Singleton per la gestione degli Errori di Eccezione.&#10;Salvataggio file.&#10;Nel caso gli errori sono di Origine IO ho una Finestra Modale di visualizzazione dell`errore.">
-      <change afterPath="$PROJECT_DIR$/src/application/dao/UserDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/application/models/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PMO-Fantasy-Forest-Maze.iml" beforeDir="false" afterPath="$PROJECT_DIR$/PMO-Fantasy-Forest-Maze.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql/Creazione.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/Creazione.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_garbage/view/LaunchPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_garbage/view/LaunchPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_garbage/view/StartPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_garbage/view/StartPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/application/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/application/controller/BadGuyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/controllers/BadGuyController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/application/controller/CellController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/controllers/CellController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/application/controller/KeyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/controllers/KeyController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/application/controller/MazeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/controllers/MazeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/application/controller/PlayerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/controllers/PlayerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/application/model/BadGuyModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/models/BadGuyModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/application/model/CellModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/models/CellModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/application/model/CharacterModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/models/CharacterModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/application/model/KeyModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/models/KeyModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/application/model/MazeModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/models/MazeModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/application/model/PlayerModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/models/PlayerModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/application/model/Setup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/models/Setup.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/application/model/character/Character_ImageView_ID.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/models/character/Character_ImageView_ID.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/application/model/dao/DatabaseConnectionSingleton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/models/dao/DatabaseConnectionSingleton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/application/model/dao/GenericDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/models/dao/GenericDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/application/model/dao/PlayerDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/models/dao/PlayerDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/application/view/BadGuyView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/views/BadGuyView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/application/view/CellView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/views/CellView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/application/view/CharacterPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/views/CharacterPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/application/view/GamePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/views/GamePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/application/view/HelpPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/views/HelpPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/application/view/KeyView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/views/KeyView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/application/view/LevelPage.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/views/LevelPage.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/application/view/LevelPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/views/LevelPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/application/view/MazeView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/views/MazeView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/application/view/PlayerView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/views/PlayerView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/application/view/controller/AlertHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/views/controller/AlertHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/application/view/controller/CharacterPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/views/controller/CharacterPageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/application/view/controller/LaunchPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/views/controller/LaunchPageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/application/view/controller/LoginFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/views/controller/LoginFormController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/application/view/controller/SceneController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/views/controller/SceneController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/application/view/fxml/01_Login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/views/fxml/01_Login.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/application/view/fxml/01_LoginPage.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/views/fxml/01_LoginPage.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/application/view/fxml/02_LaunchPage.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/views/fxml/02_LaunchPage.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/application/view/fxml/02_LaunchPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/views/fxml/02_LaunchPage.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/application/view/fxml/03_CharacterPage.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/views/fxml/03_CharacterPage.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/application/view/fxml/03_CharacterPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/views/fxml/03_CharacterPage.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/application/view/fxml/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/views/fxml/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/application/view/img/backgroundLogin.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/views/img/backgroundLogin.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/application/view/img/characterpage.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/views/img/characterpage.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/application/view/img/launchpage.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/views/img/launchpage.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/application/view/img/levelpage.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/views/img/levelpage.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/application/models/dao/DatabaseConnectionSingleton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/models/dao/DatabaseConnectionSingleton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/application/views/controller/LoginFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/views/controller/LoginFormController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/application/views/controller/SceneController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/views/controller/SceneController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/application/views/fxml/01_Login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/views/fxml/01_Login.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -136,7 +91,7 @@
     <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true">
       <envs>
         <env name="DB_CONN_STRING" value="jdbc:mysql://212.227.30.95:3306/fantasyDB" />
-        <env name="DB_PASSWORD" value="qwe123QWE@@@" />
+        <env name="DB_PASSWORD" value="qwe123QWE@@@@" />
         <env name="DB_USER" value="fantasyApplication" />
       </envs>
       <option name="MAIN_CLASS_NAME" value="application.Main" />
@@ -205,6 +160,7 @@
       <workItem from="1702205178647" duration="705000" />
       <workItem from="1702205890828" duration="1328000" />
       <workItem from="1702223236898" duration="5603000" />
+      <workItem from="1702326906592" duration="4731000" />
     </task>
     <task id="LOCAL-00001" summary="Singleton:&#10;aggiunta di una classe Singleton per la gestione degli Errori di Eccezione.&#10;Salvataggio file.&#10;Nel caso gli errori sono di Origine IO ho una Finestra Modale di visualizzazione dell`errore.">
       <option name="closed" value="true" />
@@ -221,6 +177,21 @@
     <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="User">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="*" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
@@ -253,13 +224,8 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/application/views/controller/LoginFormController.java</url>
-          <line>45</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/application/models/dao/DatabaseConnectionSingleton.java</url>
-          <line>26</line>
-          <option name="timeStamp" value="6" />
+          <line>134</line>
+          <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -40,9 +40,28 @@ public class SceneController {
             primaryStage.setResizable(false);
             primaryStage.show();
         }catch (Exception e){
-            e.printStackTrace();
+            // potentially add error logging here
+            // navigate to an error scene or display an error dialog
+            // return some value to signal the error
         }
     }
+
+    public void switchToScene(String nameScene, Stage stage, int width, int height) throws IOException {
+
+        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/application/views/fxml/" + nameScene + ".fxml")));
+
+        Scene scene = new Scene(root, width, height);
+        stage.setScene(scene);
+        stage.getIcons().add(new Image(Objects.requireNonNull(getClass().getResourceAsStream("/resources/img/tree1.png"))));
+        stage.setResizable(false);
+        stage.show();
+    }
+
+
+
+
+
+
 
     public void switchToScene(String nameScene, Stage stage) throws IOException {
 

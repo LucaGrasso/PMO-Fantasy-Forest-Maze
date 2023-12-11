@@ -18,8 +18,9 @@ import java.io.IOException;
 import java.sql.SQLException;
 
 public class LoginFormController {
+
     @FXML
-    private TextField nameField;
+    private TextField userField;
 
     @FXML
     private PasswordField passwordField;
@@ -42,11 +43,26 @@ public class LoginFormController {
     private String gender;
 
     @FXML
-    private void initialize() throws SQLException {
-        boolean isOnDB = DatabaseConnectionSingleton.getInstance().getDbOnline();
-        this.serverStatus.setId(isOnDB ? "isOnRectangle" : "isOffRectangle");
-        this.serverStatusText.setText(isOnDB ? "Server OnLine" : "OFFLINE");
-        registrationOption.setOnAction(actionEvent -> this.addRegistrationLayer());
+    private void initialize() {
+        try{
+            // Verifica se il server è online
+            boolean isOnDB = DatabaseConnectionSingleton.getInstance().getDbOnline();
+            this.serverStatus.setId(isOnDB ? "isOnRectangle" : "isOffRectangle");
+            this.serverStatusText.setText(isOnDB ? "Server OnLine" : "OFFLINE");
+            // Se il server è offline, disabilita i campi di inserimento
+            this.userField.setDisable(!isOnDB);
+            this.passwordField.setDisable(!isOnDB);
+            this.registrationOption.setDisable(!isOnDB);
+
+            // Se il server è offline, disabilita la registrazione
+            registrationOption.setOnAction(actionEvent -> this.addRegistrationLayer());
+        } catch (Exception e) {
+
+           this.serverStatus.setId("isOffRectangle");
+           this.serverStatusText.setText("OFFLINE");
+           this.userField.setDisable(true);
+           this.passwordField.setDisable(true);
+        }
     }
 
 
@@ -89,7 +105,7 @@ public class LoginFormController {
 
         Window owner = submitButton.getScene().getWindow();
 
-        if (nameField.getText().isEmpty()) {
+        if (userField.getText().isEmpty()) {
             showAlert(Alert.AlertType.ERROR, owner, "Data Error!",
                     "Please enter your name");
             return;
@@ -100,7 +116,7 @@ public class LoginFormController {
             return;
         }
 
-        PlayerDAO player = new PlayerDAO(nameField.getText(), passwordField.getText());
+        PlayerDAO player = new PlayerDAO(userField.getText(), passwordField.getText());
 
         if (!registrationOption.isSelected() && player.getIsPlayerUniquePresent()) {
             Login();
