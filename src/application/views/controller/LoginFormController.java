@@ -105,16 +105,26 @@ public class LoginFormController {
 
         Window owner = submitButton.getScene().getWindow();
 
-        if (userField.getText().isEmpty()) {
+        // Verifica se il server è online e se è possibile connettersi al database
+        // Se non è possibile connettersi al database, mi connetto al gioco in modalità offline o in modalità demo
+
+
+
+        // Verifica se i campi sono vuoti
+        if (userField.getText().isEmpty() || passwordField.getText().isEmpty() || userField.getText().length() < 3) {
             showAlert(Alert.AlertType.ERROR, owner, "Data Error!",
                     "Please enter your name");
             return;
         }
-        if (passwordField.getText().isEmpty()) {
-           showAlert(Alert.AlertType.ERROR, owner, "Password Error!",
-                    "Please enter a password");
+
+        // Verifica se la password è valida
+        if (passwordField.getText().length() < 4 && passwordField.getText().length() > 20) {
+            showAlert(Alert.AlertType.ERROR, owner, "Password Error!",
+                    "Please enter a password with at least 8 characters and at most 20 characters");
             return;
         }
+
+
 
         PlayerDAO player = new PlayerDAO(userField.getText(), passwordField.getText());
 

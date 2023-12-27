@@ -20,6 +20,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="FxmlFile" />
       </list>
     </option>
   </component>
@@ -32,9 +33,13 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
+  &quot;history&quot;: [
+    {
+      &quot;state&quot;: &quot;OPEN&quot;
+    }
+  ],
   &quot;lastFilter&quot;: {
-    &quot;state&quot;: &quot;OPEN&quot;,
-    &quot;assignee&quot;: &quot;LucaGrasso&quot;
+    &quot;state&quot;: &quot;OPEN&quot;
   }
 }</component>
   <component name="GithubPullRequestsUISettings">
@@ -67,6 +72,10 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.Main (1).executor": "Run",
+    "Downloaded.Files.Path.Enabled": "true",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -74,17 +83,22 @@
     "git-widget-placeholder": "login-refactoring",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "F:/JetBrains/PMO-Fantasy-Forest-Maze/src/jars/mysql-connector-j-8.0.31.jar",
+    "last_opened_file_path": "C:/Users/lgras/AppData/Roaming/JetBrains/IntelliJIdea2023.3/jdbc-drivers/MySQL ConnectorJ/8.0.25/mysql-connector-java-8.0.25.jar",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Global Libraries",
+    "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "ml.llm.AIAssistantPromptsLibrary",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ]
   }
 }]]></component>
   <component name="RunManager" selected="Application.Main (1)">
@@ -138,6 +152,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
+        <option value="jdk-21.0.1-openjdk-21.0.1-249ae16d76d6-a618e4d4" />
         <option value="jdk-21.0.1-openjdk-21.0.1-3183f394aec4-7d648f2c" />
       </set>
     </attachedChunks>
@@ -161,6 +176,14 @@
       <workItem from="1702205890828" duration="1328000" />
       <workItem from="1702223236898" duration="5603000" />
       <workItem from="1702326906592" duration="4731000" />
+      <workItem from="1702420908353" duration="1341000" />
+      <workItem from="1702448700344" duration="200000" />
+      <workItem from="1702493446496" duration="991000" />
+      <workItem from="1702928665309" duration="1121000" />
+      <workItem from="1703107152191" duration="1921000" />
+      <workItem from="1703444704618" duration="2000" />
+      <workItem from="1703445268260" duration="1508000" />
+      <workItem from="1703455642489" duration="2674000" />
     </task>
     <task id="LOCAL-00001" summary="Singleton:&#10;aggiunta di una classe Singleton per la gestione degli Errori di Eccezione.&#10;Salvataggio file.&#10;Nel caso gli errori sono di Origine IO ho una Finestra Modale di visualizzazione dell`errore.">
       <option name="closed" value="true" />
@@ -202,7 +225,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="main" />
+                        <option value="login-refactoring" />
                       </list>
                     </value>
                   </entry>
@@ -218,17 +241,6 @@
     <MESSAGE value="Update .gitignore&#10;&#10;tolto file di gestione .idea dal progetto." />
     <MESSAGE value="Singleton:&#10;aggiunta di una classe Singleton per la gestione degli Errori di Eccezione.&#10;Salvataggio file.&#10;Nel caso gli errori sono di Origine IO ho una Finestra Modale di visualizzazione dell`errore." />
     <option name="LAST_COMMIT_MESSAGE" value="Singleton:&#10;aggiunta di una classe Singleton per la gestione degli Errori di Eccezione.&#10;Salvataggio file.&#10;Nel caso gli errori sono di Origine IO ho una Finestra Modale di visualizzazione dell`errore." />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/application/views/controller/LoginFormController.java</url>
-          <line>134</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

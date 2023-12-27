@@ -122,7 +122,7 @@ public class LaunchPageController extends BorderPane {
     }
 
 
-    //TODO aggiungere il nome del giocatore e il suo score
+    //TODO: aggiungere il nome del giocatore e il suo score
 
 
 }

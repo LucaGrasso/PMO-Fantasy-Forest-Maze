@@ -19,5 +19,6 @@
       </library>
     </orderEntry>
     <orderEntry type="library" name="mysql-connector-j-8.0.31" level="application" />
+    <orderEntry type="library" exported="" name="de.jensd.fontawesomefx" level="project" />
   </component>
 </module>
