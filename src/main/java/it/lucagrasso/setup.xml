@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<amazing_maze>
+	<section>
+		<setup section = "total_character">
+			<value>3</value>
+		</setup>
+		<setup section = "url_character">
+			<value>resources/img/character/</value>
+		</setup>
+		<setup section = "body_file_name">
+			<value>body</value>
+		</setup>
+		<setup section = "head_file_name">
+			<value>head</value>
+		</setup>
+	</section>
+</amazing_maze>  
