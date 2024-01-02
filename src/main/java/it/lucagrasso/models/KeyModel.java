@@ -1,6 +1,6 @@
 package it.lucagrasso.models;
 
-import application.controllers.KeyController;
+import it.lucagrasso.controllers.KeyController;
 
 /**
  * @Auther: Luca Grasso

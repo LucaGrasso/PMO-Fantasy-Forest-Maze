@@ -1,9 +1,9 @@
 package it.lucagrasso.controllers;
 
 
-import application.models.KeyModel;
-import application.models.MazeModel;
-import application.views.KeyView;
+import it.lucagrasso.models.KeyModel;
+import it.lucagrasso.models.MazeModel;
+import it.lucagrasso.views.KeyView;
 
 // import java.util.Timer;
 

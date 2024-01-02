@@ -1,4 +1,4 @@
-package application.views.controller;
+package it.lucagrasso.views.controller;
 
 /**
  * @author lgras  on  25/10/2023
@@ -12,8 +12,8 @@ import javafx.scene.layout.GridPane;
 import javafx.scene.shape.Rectangle;
 import javafx.stage.Window;
 import javafx.stage.Stage;
-import application.models.dao.DatabaseConnectionSingleton;
-import application.models.dao.PlayerDAO;
+import it.lucagrasso.models.dao.DatabaseConnectionSingleton;
+import it.lucagrasso.models.dao.PlayerDAO;
 import java.io.IOException;
 import java.sql.SQLException;
 

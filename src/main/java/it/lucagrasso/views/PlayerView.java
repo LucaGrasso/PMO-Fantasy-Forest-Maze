@@ -1,8 +1,8 @@
 package it.lucagrasso.views;
 
-import application.controllers.PlayerController;
-import application.models.CharacterModel;
-import application.models.MazeModel;
+import it.lucagrasso.controllers.PlayerController;
+import it.lucagrasso.models.CharacterModel;
+import it.lucagrasso.models.MazeModel;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.StackPane;

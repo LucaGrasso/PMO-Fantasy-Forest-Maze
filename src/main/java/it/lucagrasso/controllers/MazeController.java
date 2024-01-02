@@ -1,8 +1,8 @@
 package it.lucagrasso.controllers;
 
-import application.models.MazeModel;
-import application.views.GamePage;
-import application.views.MazeView;
+import it.lucagrasso.models.MazeModel;
+import it.lucagrasso.views.GamePage;
+import it.lucagrasso.views.MazeView;
 import javafx.animation.FadeTransition;
 import javafx.animation.RotateTransition;
 import javafx.animation.ScaleTransition;

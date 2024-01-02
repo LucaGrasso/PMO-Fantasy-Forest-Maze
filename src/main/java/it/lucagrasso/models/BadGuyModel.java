@@ -1,6 +1,6 @@
 package it.lucagrasso.models;
 
-import application.controllers.BadGuyController;
+import it.lucagrasso.controllers.BadGuyController;
 
 /**
  * @Auther: Luca Grasso

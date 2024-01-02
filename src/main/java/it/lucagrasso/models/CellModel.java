@@ -1,6 +1,6 @@
 package it.lucagrasso.models;
 
-import application.controllers.CellController;
+import it.lucagrasso.controllers.CellController;
 
 /**
  * @Auther: Luca Grasso

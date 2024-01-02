@@ -1,7 +1,7 @@
 package it.lucagrasso.dao;
 
 
-import application.models.User;
+import it.lucagrasso.models.User;
 
 import java.sql.*;
 import java.util.logging.Level;

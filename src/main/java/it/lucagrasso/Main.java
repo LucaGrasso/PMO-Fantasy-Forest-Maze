@@ -3,8 +3,8 @@ package it.lucagrasso;
 
 import javafx.application.Application;
 import javafx.stage.Stage;
-import application.views.controller.SceneController;
-import utilities.ExceptionLogger;
+import it.lucagrasso.views.controller.SceneController;
+import it.lucagrasso.utilities.ExceptionLogger;
 
 
 // https://edencoding.com/mvc-in-javafx/

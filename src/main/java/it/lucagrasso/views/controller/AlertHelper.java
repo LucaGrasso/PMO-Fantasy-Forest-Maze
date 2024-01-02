@@ -1,4 +1,4 @@
-package application.views.controller;
+package it.lucagrasso.views.controller;
 
 /**
  * @author lgras  on  25/10/2022

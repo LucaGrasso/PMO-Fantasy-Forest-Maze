@@ -1,4 +1,4 @@
-package application.views.controller;
+package it.lucagrasso.views.controller;
 
 import javafx.animation.Timeline;
 import javafx.animation.TranslateTransition;
@@ -15,7 +15,7 @@ import javafx.scene.text.FontWeight;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 import javafx.util.Duration;
-import application.models.CharacterModel;
+import it.lucagrasso.models.CharacterModel;
 
 /**
  * @author: Luca Grasso

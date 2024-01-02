@@ -1,4 +1,4 @@
-package application.views.controller;
+package it.lucagrasso.views.controller;
 
 
 import javafx.fxml.FXMLLoader;

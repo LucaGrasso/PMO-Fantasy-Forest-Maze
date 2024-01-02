@@ -1,7 +1,7 @@
 package it.lucagrasso.views;
 
-import application.controllers.KeyController;
-import application.models.MazeModel;
+import it.lucagrasso.controllers.KeyController;
+import it.lucagrasso.models.MazeModel;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.StackPane;

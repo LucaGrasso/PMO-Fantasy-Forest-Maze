@@ -1,7 +1,7 @@
 package it.lucagrasso.controllers;
 
-import application.models.CellModel;
-import application.views.CellView;
+import it.lucagrasso.models.CellModel;
+import it.lucagrasso.views.CellView;
 import javafx.event.EventHandler;
 import javafx.scene.image.Image;
 import javafx.scene.input.MouseEvent;

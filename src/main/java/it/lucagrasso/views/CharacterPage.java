@@ -1,7 +1,7 @@
 package it.lucagrasso.views;
 
-import application.models.CharacterModel;
-import application.models.character.Character_ImageView_ID;
+import it.lucagrasso.models.CharacterModel;
+import it.lucagrasso.models.character.Character_ImageView_ID;
 import javafx.animation.Timeline;
 import javafx.animation.TranslateTransition;
 import javafx.geometry.Insets;

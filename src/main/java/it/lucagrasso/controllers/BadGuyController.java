@@ -1,8 +1,8 @@
 package it.lucagrasso.controllers;
 
-import application.models.BadGuyModel;
-import application.models.MazeModel;
-import application.views.BadGuyView;
+import it.lucagrasso.models.BadGuyModel;
+import it.lucagrasso.models.MazeModel;
+import it.lucagrasso.views.BadGuyView;
 
 /**
  * @Auther: Luca Grasso

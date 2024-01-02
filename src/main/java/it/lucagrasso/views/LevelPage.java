@@ -2,7 +2,7 @@ package it.lucagrasso.views;
 
 //import application.controllers.PlayerController;
 
-import application.models.CharacterModel;
+import it.lucagrasso.models.CharacterModel;
 import javafx.animation.Timeline;
 import javafx.animation.TranslateTransition;
 import javafx.geometry.Insets;

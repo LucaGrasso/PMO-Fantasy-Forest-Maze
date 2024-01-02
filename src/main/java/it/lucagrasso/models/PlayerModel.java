@@ -1,6 +1,6 @@
 package it.lucagrasso.models;
 
-import application.controllers.PlayerController;
+import it.lucagrasso.controllers.PlayerController;
 
 /**
  * @Auther: Luca Grasso

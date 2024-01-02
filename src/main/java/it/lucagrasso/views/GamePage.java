@@ -1,6 +1,6 @@
 package it.lucagrasso.views;
 
-import application.controllers.MazeController;
+import it.lucagrasso.controllers.MazeController;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.control.Label;

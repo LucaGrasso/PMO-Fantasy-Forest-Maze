@@ -1,6 +1,6 @@
 package it.lucagrasso.models;
 
-import application.controllers.*;
+import it.lucagrasso.controllers.*;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
