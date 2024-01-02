@@ -7,6 +7,8 @@ import it.lucagrasso.views.controller.SceneController;
 import it.lucagrasso.utilities.ExceptionLogger;
 
 
+
+
 // https://edencoding.com/mvc-in-javafx/
 
 // Abstract of javafx.application.Application
@@ -15,6 +17,7 @@ import it.lucagrasso.utilities.ExceptionLogger;
 public class Main extends Application {
 
     public static void main(String[] args) {
+    System.out.println("Applicazione in inizializzazione");
 
         launch(args);
     }

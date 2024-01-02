@@ -22,7 +22,7 @@ public class SceneController {
     private final int height;
 
     public SceneController(String nameScene, Stage stage, int width, int height) {
-        this.nameScene = "/application/views/fxml/" + nameScene + ".fxml";
+        this.nameScene = "/views/fxml/" + nameScene + ".fxml";
         this.primaryStage = stage;
         this.width = width;
         this.height = height;
