@@ -18,8 +18,8 @@ public class Main extends Application {
 
     public static void main(String[] args) {
     System.out.println("Applicazione in inizializzazione");
-
-        launch(args);
+        System.out.print("Test del main");
+//        launch(args);
     }
 
     @Override

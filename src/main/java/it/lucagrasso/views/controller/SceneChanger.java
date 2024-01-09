@@ -14,5 +14,5 @@ import java.io.IOException;
 import java.util.Objects;
 
 public interface SceneChanger {
-    void switchScene(String fxmlName);
+    void switchToScene();
 }
