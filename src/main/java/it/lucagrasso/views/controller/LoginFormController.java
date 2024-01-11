@@ -17,85 +17,62 @@ import it.lucagrasso.models.dao.PlayerDAO;
 import java.io.IOException;
 import java.sql.SQLException;
 
-public class LoginFormController {
-
+public class LoginFormController extends GeneralController{
     @FXML
     private TextField userField;
-
     @FXML
     private PasswordField passwordField;
-
     @FXML
     private RadioButton registrationOption;
-
     @FXML
     private Button submitButton;
     @FXML
     private Rectangle serverStatus;
-
     @FXML
     private Label serverStatusText;
-
     @FXML
     private GridPane gridLogin;
 
     // Sesso del nuovo registrato
     private String gender;
 
+
+    private void setServerStatusAndDisableFields(boolean condition) {
+        this.serverStatus.setId(condition ? "isOnRectangle" : "isOffRectangle");
+        this.serverStatusText.setText(condition ? "Server OnLine" : "OFFLINE");
+        this.userField.setDisable(!condition);
+        this.passwordField.setDisable(!condition);
+        this.registrationOption.setDisable(!condition);
+    }
+
     @FXML
     private void initialize() {
-        try{
-            // Verifica se il server è online
+        try {
             boolean isOnDB = DatabaseConnectionSingleton.getInstance().getDbOnline();
-            this.serverStatus.setId(isOnDB ? "isOnRectangle" : "isOffRectangle");
-            this.serverStatusText.setText(isOnDB ? "Server OnLine" : "OFFLINE");
-            // Se il server è offline, disabilita i campi di inserimento
-            this.userField.setDisable(!isOnDB);
-            this.passwordField.setDisable(!isOnDB);
-            this.registrationOption.setDisable(!isOnDB);
-
-            // Se il server è offline, disabilita la registrazione
+            setServerStatusAndDisableFields(isOnDB);
             registrationOption.setOnAction(actionEvent -> this.addRegistrationLayer());
         } catch (Exception e) {
-
-           this.serverStatus.setId("isOffRectangle");
-           this.serverStatusText.setText("OFFLINE");
-           this.userField.setDisable(true);
-           this.passwordField.setDisable(true);
+            setServerStatusAndDisableFields(false);
         }
+    }
+
+    private void createAndConfigureRadioButton(ToggleGroup group, String text, String id, String genderValue) {
+        RadioButton radioButton = new RadioButton();
+        radioButton.setText(text);
+        radioButton.setId(id);
+        radioButton.setToggleGroup(group);
+        radioButton.setOnAction(actionEvent -> this.gender = genderValue);
+        gridLogin.add(radioButton, id.equals("maleRbtn") ? 1 : id.equals("femaleRbtn") ? 2 : 3, 5);
     }
 
 
     @FXML
     private void addRegistrationLayer() {
         if (registrationOption.isSelected()) {
-
             final ToggleGroup group = new ToggleGroup();
-            RadioButton maleRbtn = new RadioButton();
-            RadioButton femaleRbtn = new RadioButton();
-            RadioButton fluidRbtn = new RadioButton();
-
-            maleRbtn.setText("Male");
-            maleRbtn.setId("maleRbtn");
-            this.gender = "M";
-            maleRbtn.setSelected(true);
-            maleRbtn.setToggleGroup(group);
-
-            femaleRbtn.setText("Female");
-            femaleRbtn.setId("femaleRbtn");
-            femaleRbtn.setToggleGroup(group);
-
-            fluidRbtn.setText("Gender X");
-            fluidRbtn.setId("fluidRbtn");
-            fluidRbtn.setToggleGroup(group);
-
-            maleRbtn.setOnAction(actionEvent -> {this.gender = "M";});
-            femaleRbtn.setOnAction(actionEvent -> {this.gender = "F";});
-            fluidRbtn.setOnAction(actionEvent -> {this.gender = "X";});
-
-            gridLogin.add(maleRbtn, 1, 5); // coloum - row
-            gridLogin.add(femaleRbtn, 2, 5); // coloum - row
-            gridLogin.add(fluidRbtn, 3, 5); // coloum - row
+            createAndConfigureRadioButton(group, "Male", "maleRbtn", "M");
+            createAndConfigureRadioButton(group, "Female", "femaleRbtn", "F");
+            createAndConfigureRadioButton(group, "Gender X", "fluidRbtn", "X");
         } else {
             gridLogin.getChildren().removeIf(node -> GridPane.getRowIndex(node) == 5);
         }
