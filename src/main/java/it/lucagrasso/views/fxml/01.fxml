@@ -1,52 +1,49 @@
-<?import java.lang.*?>
-<?import javafx.scene.control.*?>
-<?import org.kordamp.ikonli.javafx.FontIcon?>
-<?import javafx.scene.effect.DropShadow?>
-<?import javafx.scene.layout.*?>
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.text.Text?>
+<?xml version="1.0" encoding="UTF-8"?>
 
-<BorderPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller" stylesheets="/sample/style.css">
-   <center>
-      <AnchorPane AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <left>
+      <AnchorPane prefHeight="500.0" prefWidth="350.0" style="-fx-background-color: #0596ff;" BorderPane.alignment="CENTER">
          <children>
-            <VBox alignment="TOP_CENTER" layoutX="114.0" layoutY="25.0" spacing="15.0" AnchorPane.bottomAnchor="46.0" AnchorPane.leftAnchor="120.0" AnchorPane.rightAnchor="117.0" AnchorPane.topAnchor="35.0">
-               <children>
-                  <Text fx:id="header" styleClass="header" text="Login"/>
-                  <TextField fx:id="username" promptText="USERNAME" styleClass="textfield" AnchorPane.rightAnchor="0.0">
-                     <VBox.margin>
-                        <Insets bottom="15.0" left="50.0" right="50.0" top="15.0"/>
-                     </VBox.margin>
-                  </TextField>
-                  <PasswordField fx:id="password" promptText="PASSWORD" AnchorPane.rightAnchor="0.0">
-                     <VBox.margin>
-                        <Insets bottom="15.0" left="50.0" right="50.0" top="15.0"/>
-                     </VBox.margin>
-                  </PasswordField>
-                  <HBox alignment="CENTER" spacing="10.0">
-                     <children>
-                        <Button fx:id="buttonLogin" mnemonicParsing="false" styleClass="button" text="Login">
-                           <effect>
-                              <DropShadow color="BLACK" height="200.0"/>
-                           </effect>
-                        </Button>
-                     </children>
-                     <VBox.margin>
-                        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
-                     </VBox.margin>
-                  </HBox>
-               </children>
-               <padding>
-                  <Insets bottom="15.0" left="25.0" right="25.0" top="15.0"/>
-               </padding>
-            </VBox>
-            <FontIcon iconLiteral="fas-tree" style="-fx-icon-color: white; -fx-icon-size:65;" layoutX="179.0" layoutY="244.0"/>
-            <FontIcon iconLiteral="fas-tree" style="-fx-icon-color: white; -fx-icon-size:70;" layoutX="147.0" layoutY="186.0"/>
-            <!-- Insert other icons here as shown above -->
+            <FontIcon iconColor="WHITE" iconLiteral="fas-tree" iconSize="65" layoutX="186.0" layoutY="254.0" wrappingWidth="5.0" />
+            <FontIcon iconColor="WHITE" iconLiteral="fas-tree" iconSize="70" layoutX="154.0" layoutY="196.0" wrappingWidth="5.0" />
+            <FontIcon iconColor="WHITE" iconLiteral="fas-tree" iconSize="75" layoutX="122.0" layoutY="270.0" wrappingWidth="5.0" />
+            <Text fill="WHITE" layoutX="87.0" layoutY="323.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fantasy Forest Maze" underline="true">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Text>
+         </children></AnchorPane>
+   </left>
+   <right>
+      <AnchorPane prefHeight="500.0" prefWidth="373.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField layoutX="125.0" layoutY="207.0" promptText="User Name" style="-fx-background-color: trasparent; -fx-border-color: #0596ff; -fx-border-width: 0px 0px 2px 0px;" />
+            <PasswordField layoutX="125.0" layoutY="268.0" promptText="Password" style="-fx-background-color: trasparent; -fx-border-color: #0596ff; -fx-border-width: 0px 0px 2px 0px;" />
+            <FontIcon iconColor="#0596ff" iconLiteral="fas-user" iconSize="20" layoutX="90.0" layoutY="228.0" selectionFill="#0597ff" />
+            <FontIcon iconColor="#0596ff" iconLiteral="fas-key" iconSize="20" layoutX="87.0" layoutY="289.0" selectionFill="#0596ff" />
+            <Button layoutX="153.0" layoutY="334.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="85.0" style="-fx-background-color: #0596ff;" text="Login" textFill="WHITE" />
+            <Hyperlink layoutX="135.0" layoutY="409.0" text="Forgot Your Password?" />
+            <FontIcon iconColor="#0596ff" iconLiteral="fas-users" iconSize="36" layoutX="174.0" layoutY="127.0" selectionFill="#0596ff" />
+            <Text fill="#0596ff" layoutX="140.0" layoutY="171.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Player Login" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Text>
+            <Button layoutX="315.0" layoutY="8.0" mnemonicParsing="false" style="-fx-background-color: trasparent;">
+               <graphic>
+                  <FontIcon iconColor="#0596ff" iconLiteral="fas-times" iconSize="20" layoutX="310.0" layoutY="41.0" />
+               </graphic></Button>
          </children>
       </AnchorPane>
-   </center>
-   <stylesheets>
-      <URL value="@../sample/style.css"/>
-   </stylesheets>
+   </right>
 </BorderPane>
