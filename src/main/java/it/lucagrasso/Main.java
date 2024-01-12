@@ -18,14 +18,14 @@ public class Main extends Application {
 
     public static void main(String[] args) {
     System.out.println("Applicazione in inizializzazione");
-        System.out.print("Test del main");
+        System.out.println("Test del main");
 //        launch(args);
     }
 
     @Override
     public void start(Stage primaryStage) {
         try {
-            new SceneController("01_Login", primaryStage, 800, 600);
+            new SceneController("01_LoginNew", primaryStage, 800, 600);
         } catch (Exception e) {
             ExceptionLogger logger = ExceptionLogger.getInstance();
 
