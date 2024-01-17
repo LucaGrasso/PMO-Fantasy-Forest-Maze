@@ -1,6 +1,5 @@
 package it.lucagrasso.views.controller;
 
-import javafx.application.Platform;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
@@ -26,7 +25,7 @@ public class SceneController {
     private static final Logger LOGGER = Logger.getLogger(SceneController.class.getName());
 
     public SceneController(String nameScene, Stage stage, int width, int height) {
-        this.nameScene = "views/fxml/" + nameScene + ".fxml";
+        this.nameScene = "/fxml/" + nameScene + ".fxml";
         this.primaryStage = stage;
         this.width = width;
         this.height = height;
@@ -34,11 +33,10 @@ public class SceneController {
     }
     private void switchToCreation() {
         try {
-
             Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource(nameScene)));
             primaryStage.setTitle("Enchanted Woods");
             primaryStage.setScene(new Scene(root, width, height));
-            primaryStage.getIcons().add(new Image(Objects.requireNonNull(getClass().getResourceAsStream("/resources/img/tree1.png"))));
+            primaryStage.getIcons().add(new Image(Objects.requireNonNull(getClass().getResourceAsStream("/img/tree1.png"))));
             primaryStage.setResizable(false);
             primaryStage.show();
         } catch (Exception e){

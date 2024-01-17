@@ -1,16 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.control.Hyperlink?>
-<?import javafx.scene.control.PasswordField?>
-<?import javafx.scene.control.TextField?>
-<?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.BorderPane?>
-<?import javafx.scene.text.Font?>
-<?import javafx.scene.text.Text?>
-<?import org.kordamp.ikonli.javafx.FontIcon?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import org.kordamp.ikonli.javafx.*?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.lucagrasso.views.controller.LoginFormController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.lucagrasso.views.controller.LoginFormController_old">
    <left>
       <AnchorPane prefHeight="500.0" prefWidth="350.0" style="-fx-background-color: #0596ff;" BorderPane.alignment="CENTER">
          <children>
@@ -22,6 +18,7 @@
                   <Font size="22.0" />
                </font>
             </Text>
+            <Circle fill="WHITE" layoutX="191.0" layoutY="392.0" radius="10.0" />
          </children></AnchorPane>
    </left>
    <right>
@@ -32,7 +29,7 @@
             <FontIcon iconColor="#0596ff" iconLiteral="fas-user" iconSize="20" layoutX="90.0" layoutY="228.0" selectionFill="#0597ff" />
             <FontIcon iconColor="#0596ff" iconLiteral="fas-key" iconSize="20" layoutX="87.0" layoutY="289.0" selectionFill="#0596ff" />
             <Button layoutX="153.0" layoutY="334.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="85.0" style="-fx-background-color: #0596ff;" text="Login" textFill="WHITE" />
-            <Hyperlink layoutX="135.0" layoutY="409.0" text="Forgot Your Password?" />
+            <Hyperlink layoutX="124.0" layoutY="393.0" text="Forgot Your Password?" />
             <FontIcon iconColor="#0596ff" iconLiteral="fas-users" iconSize="36" layoutX="174.0" layoutY="127.0" selectionFill="#0596ff" />
             <Text fill="#0596ff" layoutX="140.0" layoutY="171.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Player Login" textAlignment="CENTER">
                <font>

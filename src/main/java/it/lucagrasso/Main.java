@@ -1,5 +1,11 @@
 package it.lucagrasso;
 
+import it.lucagrasso.models.DatabaseConfig;
+import it.lucagrasso.models.DatabaseConnector;
+import it.lucagrasso.models.ServerDatabaseConfig;
+import it.lucagrasso.views.controller.DatabaseStatusObserver;
+import it.lucagrasso.views.controller.LoginFormController;
+
 import javafx.application.Application;
 import javafx.stage.Stage;
 import it.lucagrasso.views.controller.SceneController;
@@ -17,8 +23,18 @@ public class Main extends Application {
         launch(args);
     }
     @Override
-    public void start(Stage primaryStage) {
+    public void start(Stage primaryStage) throws Exception{
         try {
+
+            // Creo una connessione al Database in remoto
+            DatabaseConfig config = new ServerDatabaseConfig();
+            LoginFormController controller = new LoginFormController();
+            DatabaseStatusObserver observer = controller.databaseStatusObserver;
+            DatabaseConnector connector = new DatabaseConnector(config, observer);
+            new Thread(connector).start();
+            // --------------------------
+
+
             new SceneController("01_LoginNew", primaryStage, 800, 600);
         } catch (Exception e) {
             ExceptionLogger logger = ExceptionLogger.getInstance();
