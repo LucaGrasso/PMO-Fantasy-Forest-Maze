@@ -5,26 +5,30 @@ import it.lucagrasso.views.controller.DatabaseStatusObserver;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
+import java.util.Properties;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
 public class DatabaseConnector implements Runnable {
     private final DatabaseConfig config;
-    private DatabaseStatusObserver databaseStatusObserver;
+    private final DatabaseStatusObserver databaseStatusObserver;
 
-    private static Logger logger = Logger.getLogger(DatabaseConnector.class.getName());
+    private static final Logger logger = Logger.getLogger(DatabaseConnector.class.getName());
 
     public DatabaseConnector(DatabaseConfig config, DatabaseStatusObserver observer) {
         this.config = config;
         this.databaseStatusObserver = observer;
+        new Thread(this).start();
     }
+
 
     @Override
     public void run() {
         Connection connection = null;
         try {
-            // Carica il driver MySQL JDBC
-            Class.forName("com.mysql.cj.jdbc.Driver");
+            // Carica il driver JDBC
+            String driver = config.getDriver();
+            Class.forName(driver);
             // Esegui la connessione al database qui con le informazioni provenienti da config
             String url = config.getUrl();
             String user = config.getUser();

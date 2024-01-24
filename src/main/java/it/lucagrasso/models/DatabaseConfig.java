@@ -19,16 +19,18 @@ public class DatabaseConfig {
             // handle the exception
         }
     }
-
+    public String getDriver() {
+        return properties.getProperty("DB_DRIVER");
+    }
     public String getUrl() {
         return properties.getProperty("DB_URL");
     }
-
     public String getUser() {
         return properties.getProperty("DB_USER");
     }
-
     public String getPassword() {
         return properties.getProperty("DB_PASSWORD");
     }
+
+
 }

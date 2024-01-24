@@ -6,7 +6,7 @@
 <?import javafx.scene.text.*?>
 <?import org.kordamp.ikonli.javafx.*?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.lucagrasso.views.controller.LoginFormController_old">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.lucagrasso.views.controller.LoginFormController">
    <left>
       <AnchorPane prefHeight="500.0" prefWidth="350.0" style="-fx-background-color: #0596ff;" BorderPane.alignment="CENTER">
          <children>
@@ -18,7 +18,7 @@
                   <Font size="22.0" />
                </font>
             </Text>
-            <Circle fill="WHITE" layoutX="191.0" layoutY="392.0" radius="10.0" />
+            <Circle fx:id="databaseStatusIndicator" fill="WHITE" layoutX="191.0" layoutY="392.0" radius="10.0" />
          </children></AnchorPane>
    </left>
    <right>

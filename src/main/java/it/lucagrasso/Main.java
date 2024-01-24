@@ -3,6 +3,7 @@ package it.lucagrasso;
 import it.lucagrasso.models.DatabaseConfig;
 import it.lucagrasso.models.DatabaseConnector;
 import it.lucagrasso.models.ServerDatabaseConfig;
+import it.lucagrasso.views.controller.DatabaseController;
 import it.lucagrasso.views.controller.DatabaseStatusObserver;
 import it.lucagrasso.views.controller.LoginFormController;
 
@@ -16,7 +17,9 @@ import it.lucagrasso.utilities.ExceptionLogger;
 // Abstract of javafx.application.Application
 // The entry point for JavaFX applications is the Application class:
 // ref: https://openjfx.io/javadoc/11/javafx.graphics/javafx/application/Application.html
+
 public class Main extends Application {
+    DatabaseController dbController;
     public static void main(String[] args) {
         System.out.println("Applicazione in inizializzazione");
         System.out.println("Test del main");
@@ -25,15 +28,10 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception{
         try {
-
-            // Creo una connessione al Database in remoto
             DatabaseConfig config = new ServerDatabaseConfig();
-            LoginFormController controller = new LoginFormController();
-            DatabaseStatusObserver observer = controller.databaseStatusObserver;
-            DatabaseConnector connector = new DatabaseConnector(config, observer);
-            new Thread(connector).start();
-            // --------------------------
-
+            dbController = new DatabaseController();
+            new DatabaseConnector(config, dbController);
+            new SceneController("01_LoginNew", primaryStage, 800, 600);
 
             new SceneController("01_LoginNew", primaryStage, 800, 600);
         } catch (Exception e) {
