@@ -33,7 +33,7 @@ public class Main extends Application {
             new DatabaseConnector(config, dbController);
             new SceneController("01_LoginNew", primaryStage, 800, 600);
 
-            new SceneController("01_LoginNew", primaryStage, 800, 600);
+
         } catch (Exception e) {
             ExceptionLogger logger = ExceptionLogger.getInstance();
             logger.logException("Errore nell`apertura di 01_login", e);
