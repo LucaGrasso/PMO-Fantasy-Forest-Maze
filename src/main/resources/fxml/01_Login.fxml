@@ -1,105 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.net.*?>
-<?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.shape.*?>
 <?import javafx.scene.text.*?>
+<?import org.kordamp.ikonli.javafx.*?>
 
-<GridPane fx:id="gridLogin" alignment="center" hgap="5.0" vgap="5.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.lucagrasso.views.controller.LoginFormController_old">
-    <columnConstraints>
-        <ColumnConstraints halignment="RIGHT" maxWidth="100.0" minWidth="100.0" prefWidth="100.0" />
-        <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="150.0" minWidth="150.0" prefWidth="150.0" />
-        <ColumnConstraints halignment="LEFT" maxWidth="100.0" minWidth="100.0" prefWidth="100.0" />
-        <ColumnConstraints />
-        <ColumnConstraints />
-    </columnConstraints>
-
-    <!-- Add Header Label -->
-    <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="27.0" prefWidth="337.0" text="Login Form" GridPane.columnIndex="1" GridPane.rowIndex="0">
-        <font>
-            <Font name="Arial Bold" size="20.0" />
-        </font>
-        <GridPane.margin>
-            <Insets bottom="20" top="20" />
-        </GridPane.margin>
-    </Label>
-
-
-    <!-- Add Name Label -->
-    <Label text="Player Name : " GridPane.columnIndex="0" GridPane.rowIndex="1">
-        <font>
-            <Font name="System Bold" size="14.0" />
-        </font>
-    </Label>
-
-    <!-- Add Name Text Field -->
-    <TextField fx:id="userField" alignment="CENTER" maxWidth="125.0" minHeight="35.0" prefHeight="40" prefWidth="100.0" text="user1" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1">
-        <font>
-            <Font name="Unis-pace-Bold" size="14.0" />
-        </font>
-    </TextField>
-
-
-    <!-- Add Password Label -->
-    <Label text="Password : " GridPane.columnIndex="0" GridPane.rowIndex="2">
-        <font>
-            <Font name="System Bold" size="14.0" />
-        </font>
-    </Label>
-
-    <!-- Add Password Field -->
-    <PasswordField fx:id="passwordField" alignment="CENTER" maxWidth="125.0" minHeight="35.0" prefHeight="40.0" prefWidth="100.0" text="123456" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2">
-        <font>
-            <Font name="Unis-pace-Bold" size="18.0" />
-        </font>
-    </PasswordField>
-
-
-    <!-- Add Submit Button -->
-    <Button fx:id="submitButton" alignment="CENTER" contentDisplay="CENTER" defaultButton="true" graphicTextGap="5.0" maxHeight="30.0" maxWidth="97.0" onAction="#handleSubmitButtonAction" prefHeight="30.0" prefWidth="97.0" styleClass="btn" stylesheets="@style.css" text="Play" textOverrun="CLIP" GridPane.columnIndex="2" GridPane.columnSpan="3" GridPane.rowIndex="2">
-        <GridPane.margin>
-            <Insets />
-        </GridPane.margin>
-        <font>
-            <Font size="14.0" />
-        </font>
-    </Button>
-    <RadioButton fx:id="registrationOption" mnemonicParsing="false" prefHeight="20.0" prefWidth="95.0" text="Registration" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="TOP">
-        <GridPane.margin>
-            <Insets />
-        </GridPane.margin>
-        <font>
-            <Font name="Unis-pace-Bold" size="10.0" />
-        </font>
-    </RadioButton>
-    <HBox GridPane.columnIndex="2" GridPane.rowIndex="1">
-        <Rectangle fx:id="serverStatus" arcHeight="5.0" arcWidth="5.0" fill="#ffffff" height="15.0" rotate="45.0" stroke="BLACK" strokeType="INSIDE" width="15.0">
-            <HBox.margin>
-                <Insets top="5.0" />
-            </HBox.margin>
-        </Rectangle>
-        <Label fx:id="serverStatusText" alignment="CENTER" contentDisplay="CENTER" prefHeight="25.0" prefWidth="80.0" text="status">
-            <font>
-                <Font name="Arial Bold" size="10.0" />
-            </font>
-            <HBox.margin>
-                <Insets />
-            </HBox.margin>
-        </Label>
-    </HBox>
-
-    <stylesheets>
-        <URL value="@style.css" />
-        <URL value="@01_LoginPage.css" />
-    </stylesheets>
-    <rowConstraints>
-        <RowConstraints maxHeight="60.0" minHeight="60.0" prefHeight="60.0" />
-        <RowConstraints minHeight="40.0" prefHeight="40.0" />
-        <RowConstraints maxHeight="40.0" minHeight="40.0" prefHeight="40.0" />
-        <RowConstraints maxHeight="20.0" minHeight="20.0" prefHeight="20.0" />
-      <RowConstraints maxHeight="20.0" minHeight="20.0" prefHeight="30.0" />
-      <RowConstraints maxHeight="20.0" minHeight="20.0" prefHeight="30.0" />
-    </rowConstraints>
-</GridPane>
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.lucagrasso.views.controller.LoginFormController">
+   <left>
+      <AnchorPane prefHeight="500.0" prefWidth="350.0" style="-fx-background-color: #0596ff;" BorderPane.alignment="CENTER">
+         <children>
+            <FontIcon iconColor="WHITE" iconLiteral="fas-tree" iconSize="65" layoutX="186.0" layoutY="254.0" wrappingWidth="5.0" />
+            <FontIcon iconColor="WHITE" iconLiteral="fas-tree" iconSize="70" layoutX="154.0" layoutY="196.0" wrappingWidth="5.0" />
+            <FontIcon iconColor="WHITE" iconLiteral="fas-tree" iconSize="75" layoutX="122.0" layoutY="270.0" wrappingWidth="5.0" />
+            <Text fill="WHITE" layoutX="87.0" layoutY="323.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fantasy Forest Maze" underline="true">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Text>
+            <Circle fx:id="databaseStatusIndicator" fill="WHITE" layoutX="101.0" layoutY="361.0" radius="10.0" />
+         </children></AnchorPane>
+   </left>
+   <right>
+      <AnchorPane prefHeight="500.0" prefWidth="373.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField layoutX="125.0" layoutY="207.0" promptText="User Name" style="-fx-background-color: transparent; -fx-border-color: #0596ff; -fx-border-width: 0px 0px 2px 0px;" />
+            <PasswordField layoutX="125.0" layoutY="268.0" promptText="Password" style="-fx-background-color: transparent; -fx-border-color: #0596ff; -fx-border-width: 0px 0px 2px 0px;" />
+            <FontIcon iconColor="#0596ff" iconLiteral="fas-user" iconSize="20" layoutX="90.0" layoutY="228.0" selectionFill="#0597ff" />
+            <FontIcon iconColor="#0596ff" iconLiteral="fas-key" iconSize="20" layoutX="87.0" layoutY="289.0" selectionFill="#0596ff" />
+            <Button fx:id="loginButton" onAction="#loginButtonAction" layoutX="153.0" layoutY="334.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="85.0" style="-fx-background-color: #0596ff;" text="Login" textFill="WHITE" />
+            <Hyperlink layoutX="124.0" layoutY="393.0" text="Forgot Your Password?" />
+            <FontIcon iconColor="#0596ff" iconLiteral="fas-users" iconSize="36" layoutX="174.0" layoutY="127.0" selectionFill="#0596ff" />
+            <Text fill="#0596ff" layoutX="140.0" layoutY="171.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Player Login" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Text>
+            <Button layoutX="315.0" layoutY="8.0" mnemonicParsing="false" style="-fx-background-color: transparent;">
+               <graphic>
+                  <FontIcon iconColor="#0596ff" iconLiteral="fas-times" iconSize="20" layoutX="310.0" layoutY="41.0" />
+               </graphic></Button>
+         </children>
+      </AnchorPane>
+   </right>
+</BorderPane>

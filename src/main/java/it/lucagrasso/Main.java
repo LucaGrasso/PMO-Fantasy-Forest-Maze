@@ -4,8 +4,6 @@ import it.lucagrasso.models.DatabaseConfig;
 import it.lucagrasso.models.DatabaseConnector;
 import it.lucagrasso.models.ServerDatabaseConfig;
 import it.lucagrasso.views.controller.DatabaseController;
-import it.lucagrasso.views.controller.DatabaseStatusObserver;
-import it.lucagrasso.views.controller.LoginFormController;
 
 import javafx.application.Application;
 import javafx.stage.Stage;
@@ -21,8 +19,8 @@ import it.lucagrasso.utilities.ExceptionLogger;
 public class Main extends Application {
     DatabaseController dbController;
     public static void main(String[] args) {
-        System.out.println("Applicazione in inizializzazione");
-        System.out.println("Test del main");
+        //System.out.println("Applicazione in inizializzazione");
+        //System.out.println("Test del main");
         launch(args);
     }
     @Override
@@ -31,7 +29,7 @@ public class Main extends Application {
             DatabaseConfig config = new ServerDatabaseConfig();
             dbController = new DatabaseController();
             new DatabaseConnector(config, dbController);
-            new SceneController("01_LoginNew", primaryStage, 800, 600);
+            new SceneController("01_Login", primaryStage, 800, 600);
 
 
         } catch (Exception e) {

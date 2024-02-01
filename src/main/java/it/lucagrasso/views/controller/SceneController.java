@@ -5,6 +5,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.image.Image;
 import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 
 import java.io.IOException;
 import java.util.Objects;
@@ -34,10 +35,12 @@ public class SceneController {
     private void switchToCreation() {
         try {
             Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource(nameScene)));
+            //primaryStage.initStyle(StageStyle.UNDECORATED); // per eliminare la barra superiore.
             primaryStage.setTitle("Enchanted Woods");
             primaryStage.setScene(new Scene(root, width, height));
             primaryStage.getIcons().add(new Image(Objects.requireNonNull(getClass().getResourceAsStream("/img/tree1.png"))));
             primaryStage.setResizable(false);
+
             primaryStage.show();
         } catch (Exception e){
             LOGGER.log(Level.SEVERE, "An error occurred while switching scenes.", e);
